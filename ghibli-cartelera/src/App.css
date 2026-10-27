@@ -1,0 +1,50 @@
+/* Fondo y letra de toda la página */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #1b1f3b;
+  color: #ffffff;
+}
+
+/* Caja central que limita el ancho */
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.app h1 {
+  text-align: center;
+}
+
+/* La rejilla: tantas columnas de 220px como quepan */
+.films {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Cada tarjeta */
+.card {
+  background: #272c55;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card p {
+  margin: 8px 0 0;
+  opacity: 0.8;
+}
